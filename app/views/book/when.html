@@ -1,0 +1,54 @@
+{% extends "layout_unbranded.html" %}
+
+{% block page_title %}
+  Example - Branching
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/book/location">Back</a>
+
+      <form action="/book/which-sport" method="get" class="form">
+
+        <h1 class="heading-large">
+          When do you want to play badminton?
+        </h1>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visually-hidden">How far can you travel to do sport?</legend>
+
+            <div class="multiple-choice">
+              <input id="radio-1" type="radio" name="time-frame" value="In the next day">
+              <label for="radio-1">In the next day</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-2" type="radio" name="time-frame" value="In the next week">
+              <label for="radio-2">In the next week</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-3" type="radio" name="time-frame" value="In the next month">
+              <label for="radio-3">In the next month</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-4" type="radio" name="time-frame" value="In more than a month">
+              <label for="radio-4">In more than a month</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}

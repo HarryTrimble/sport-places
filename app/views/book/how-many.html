@@ -1,0 +1,47 @@
+{% extends "layout_unbranded.html" %} 
+
+{% block page_title %} 
+  Driving lessons 
+{% endblock %} 
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/book/which-sport">Back</a>
+
+      <form method="get" action="/book/when" class="form">
+
+        <h1 class="heading-large">
+          How many of you will be playing badminton?
+        </h1>
+
+        <fieldset>
+          <legend class="visuallyhidden">
+            How many of you will be playing badminton?
+          </legend>
+
+          <!-- Number of people doing sport -->
+          <div class="form-group">
+            <label class="form-label-bold" for="ni-number">
+            </label>
+            <input type="text" class="form-control form-control-1-8" id="number-of-people" name="number-of-people">
+          </div>
+
+
+        </fieldset>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue" />
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+</main>
+{% endblock %}
