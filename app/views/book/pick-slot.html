@@ -1,0 +1,82 @@
+{% extends "layout_unbranded.html" %}
+
+{% block page_title %}
+  Example - Branching
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/book/location">Back</a>
+
+      <form action="/book/contact-details" method="get" class="form">
+
+        <h1 class="heading-large">
+          Times and places available to do badminton
+        </h1>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visually-hidden">How far can you travel to do sport?</legend>
+
+            <div class="multiple-choice">
+              <input id="radio-1" type="radio" name="which-slot" value="slot-1">
+              <label class="form-label-bold" for="ni-number">
+                Tomorrow at 20.00-21.00
+                  <span class="form-label">
+                  Flaxman Sports Centre, Camberwell (1.5 miles)
+                  </span>
+                  <span class="form-hint">
+                  £20 (2 courts for 1 hour)
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-1" type="radio" name="which-slot" value="slot-1">
+              <label class="form-label-bold" for="ni-number">
+                Monday at 18.30-19.30
+                  <span class="form-label">
+                  Harris Girls' Academy,  East Dulwich (0.7 miles)
+                  </span>
+                  <span class="form-hint">
+                  £16.50 (1 courts for 1 hour)
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-1" type="radio" name="which-slot" value="slot-1">
+              <label class="form-label-bold" for="ni-number">
+                Tuesday at 18.30-19.30
+                  <span class="form-label">
+                  Flaxman Sports Centre, Camberwell (1.5 miles)
+                  </span>
+                  <span class="form-hint">
+                  £20 (2 courts for 1 hour)
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-1" type="radio" name="which-slot" value="slot-1">
+              <label class="form-label-bold" for="ni-number">
+                Wednesday at 19.00-20.00
+                  <span class="form-label">
+                  Peckham Plus, Peckham (1.0 miles)
+                  </span>
+                  <span class="form-hint">
+                  £10 (2 courts for 1 hour)
+              </label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}

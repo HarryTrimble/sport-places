@@ -2,7 +2,7 @@
 // ==========================================================================
 
 .button {
-  @include button ($button-colour);
+  @include button (#000000);
   @include box-sizing (border-box);
   vertical-align: top;
 
