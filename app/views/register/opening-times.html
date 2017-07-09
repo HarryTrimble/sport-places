@@ -11,28 +11,27 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <a class="link-back" href="/book">Back</a>
+      <a class="link-back" href="/register/place-name">Back</a>
 
-      <form method="get" action="/book/location" class="form">
+      <form method="get" action="/register/how-many-spaces" class="form">
 
         <h1 class="heading-large">
-          What sport do you want to do?
+          Where is the place you're registering?
         </h1>
 
         <fieldset>
           <legend class="visuallyhidden">
-            What sport do you want to do?
+            Where is the place you're registering?
           </legend>
 
           <!-- National Insurance number -->
           <div class="form-group">
             <label class="form-label-bold" for="ni-number">
               <span class="form-hint">
-                For example badminton
+                Postcode, town or city
               </span>
             </label>
-        <!-- country picker https://github.com/alphagov/accessible-autocomplete -->
-        {% include "includes/pick-nationality.html" %}
+            <input type="text" class="form-control form-control-1-2" id="location" name="place-location">
           </div>
 
 

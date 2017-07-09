@@ -1,0 +1,154 @@
+{% extends "layout_unbranded.html" %}
+
+{% block page_title %}
+  Check your answers
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+<a class="link-back" href="/register/location">Back</a>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Spaces your place has to do sport
+      </h1>
+
+
+      <!-- only add a heading for a list if there is more than one list -->
+      <h2 class="heading-medium">
+        Space one
+      </h2>
+
+      <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+      <!--   * `cya-questions-short` for short questions -->
+      <!--   * `cya-questions-long` for long questions -->
+      <!--   * none for single group of q&a -->
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Name
+          </dt>
+          {% if data.space-name=="Yes" %}
+            {{ data['space-name'] }}
+          {% else %}
+            <dd class="cya-answer">
+              Sports hall
+            </dd>
+          {% endif %}
+          <dd class="cya-change">
+            <a href="/register/space/name">
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Size
+          </dt>
+          <dd class="cya-answer">
+            10m x 30m
+          </dd>
+          <dd class="cya-change">
+            <a href="/register/space/size">
+              Change<span class="visually-hidden"> date of birth</span>
+            </a>
+          </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            Sports
+          </dt>
+          <dd class="cya-answer">
+            Badminton<br />
+            Basketball<br />
+            Football
+          </dd>
+          <dd class="cya-change">
+            <a href="/register/space/sports">
+              Change<span class="visually-hidden"> home address</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Badminton
+          </dt>
+          <dd class="cya-answer">
+            4 courts<br />
+            4 players or less<br />
+            £10 for one hour
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="visually-hidden"> home address</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Basketball
+          </dt>
+          <dd class="cya-answer">
+            3 courts<br />
+            10 players or less<br />
+            £15 for one hour
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="visually-hidden"> home address</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Football
+          </dt>
+          <dd class="cya-answer">
+            1 pitch<br />
+            14 players or less<br />
+            £40 for one hour
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="visually-hidden"> home address</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Opening times
+          </dt>
+          <dd class="cya-answer">
+           Mon-Fri 7am-10:30pm<br>
+           Sat-Sun 9am-5:30pm
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+      <br>
+      <p><a href="">Add another space</a></p>
+
+      <br>
+
+      <div class="form-group">
+        <a href="confirmation-page" class="button">Finish registering</a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

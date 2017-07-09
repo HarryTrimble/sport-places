@@ -1,0 +1,62 @@
+{% extends "layout_unbranded.html" %}
+
+{% block page_title %}
+  Example - Branching
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/register/add-spaces">Back</a>
+
+      <form action="/register/add-spaces" method="get" class="form">
+
+        <h1 class="heading-large">
+          Sports people can do in space
+        </h1>
+
+        <p>Select all that apply:</p>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visually-hidden">What sports can people do in this space?</legend>
+
+      <div class="multiple-choice">
+        <input id="example-contact-by-email" type="checkbox" name="space-one-sports" value="Badminton" checked>
+        <label for="example-contact-by-email">Email</label>
+      </div>
+
+      <div class="multiple-choice">
+        <input id="example-contact-by-phone" type="checkbox" name="space-one-sports" value="Basketball" checked>
+        <label for="example-contact-by-phone">Phone</label>
+      </div>
+
+      <div class="multiple-choice">
+        <input id="example-contact-by-phone" type="checkbox" name="space-one-sports" value="Football" checked>
+        <label for="example-contact-by-phone">Football</label>
+      </div>
+
+      <div class="multiple-choice" data-target="contact-by-text">
+        <input id="example-contact-by-text" type="checkbox" name="space-one-sports" value="another sport">
+        <label for="example-contact-by-text">Add another sport</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="contact-by-text">
+        {% include "includes/pick-nationality.html" %}
+      </div>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Save">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "layout_unbranded.html" %} 
+
+{% block page_title %} 
+  Driving lessons 
+{% endblock %} 
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/register/add-spaces">Back</a>
+
+      <form method="get" action="/register/add-spaces" class="form">
+
+        <h1 class="heading-large">
+          What do you call this space?
+        </h1>
+
+        <fieldset>
+          <legend class="visuallyhidden">
+            What do you call this space?
+          </legend>
+
+          <!-- National Insurance number -->
+          <div class="form-group">
+            <input type="text" class="form-control form-control-1-2" id="location" name="space-name" placeholder="Sports hall">
+          </div>
+
+          <input type="hidden" name="defined-name" value="Yes">
+
+        </fieldset>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Save" />
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+</main>
+{% endblock %}

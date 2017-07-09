@@ -1,0 +1,49 @@
+{% extends "layout_unbranded.html" %} 
+
+{% block page_title %} 
+  Driving lessons 
+{% endblock %} 
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/register/add-spaces">Back</a>
+
+      <form method="get" action="/register/add-spaces" class="form">
+
+        <h1 class="heading-large">
+          How big is the space?
+        </h1>
+
+        <fieldset>
+          <legend class="visuallyhidden">
+            How big is the space?
+          </legend>
+
+<div class="form-group">
+  <label class="form-label" for="first-name-2">Width</label>
+  <input class="form-control form-control-1-8" id="first-name-2" name="space-size-width" type="text" placeholder="10m">
+</div>
+<div class="form-group">
+  <label class="form-label" for="last-name-2">Length</label>
+  <input class="form-control form-control-1-8" id="last-name-2" name="space-size-length" type="text" placeholder="30m">
+</div>
+
+
+        </fieldset>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue" />
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+</main>
+{% endblock %}

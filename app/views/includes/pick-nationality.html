@@ -1,0 +1,86 @@
+<div style="width: 50%;">
+
+<div class="autocomplete-wrapper">
+          <select name="sport" id="passport-country">
+
+            <!-- list from here http://www.bbc.co.uk/sport/all-sports -->
+            <option value="Select country" disabled selected=""></option>
+            <option value="territory:AE-AZ">American Football</option>
+            <option value="country:AF">Archery</option>
+            <option value="territory:XQZ">Athletics</option>
+            <option value="country:AL">Badminton</option>
+            <option value="country:DZ">Baseball</option>
+            <option value="territory:AS">Basketball</option>
+            <option value="country:AD">Bowls</option>
+            <option value="country:AO">Boxing</option>
+            <option value="territory:AI">Canoeing</option>
+            <option value="territory:AQ">Cricket</option>
+            <option value="country:AG">Curling</option>
+            <option value="country:AR">Cycling</option>
+            <option value="country:AM">Darts</option>
+            <option value="territory:AW">Disability Sport</option>
+            <option value="territory:SH-AC">Diving</option>
+            <option value="country:AU">Equestrian</option>
+            <option value="country:AT">Fencing</option>
+            <option value="country:AZ">Football</option>
+            <option value="country:AZ">Formula 1</option>
+            <option value="territory:AE-AZ">Gaelic Games</option>
+            <option value="country:AF">Golf</option>
+            <option value="territory:XQZ">Gymnastics</option>
+            <option value="country:AL">Handball</option>
+            <option value="country:DZ">Hockey</option>
+            <option value="territory:AS">Horse Racing</option>
+            <option value="country:AD">Ice Hockey</option>
+            <option value="country:AO">Judo</option>
+            <option value="territory:AI">Modern Pentathlon</option>
+            <option value="territory:AQ">Motorsport</option>
+            <option value="country:AG">Netball</option>
+            <option value="country:AR">Olympic Sports</option>
+            <option value="country:AM">Rowing</option>
+            <option value="territory:AW">Rugby League</option>
+            <option value="territory:SH-AC">Rugby Union</option>
+            <option value="country:AU">Sailing</option>
+            <option value="country:AT">Shooting</option>
+            <option value="country:AZ">Snooker</option>
+            <option value="territory:AE-AZ">Squash</option>
+            <option value="country:AF">Swimming</option>
+            <option value="territory:XQZ">Table Tennis</option>
+            <option value="country:AL">Taekwondo</option>
+            <option value="country:DZ">Tennis</option>
+            <option value="territory:AS">Triathlon</option>
+            <option value="country:AD">Volleyball</option>
+            <option value="country:AO">Weightlifting</option>
+            <option value="territory:AI">Modern Pentathlon</option>
+            <option value="territory:AQ">Winter Sports</option>
+            <option value="country:AG">Wrestling</option>
+          </select>
+        </div>
+
+      </div>
+
+      <script type="text/javascript" src="/public/javascripts/accessible-autocomplete.min.js"></script>
+
+      <link rel="stylesheet" href="/public/css/accessible-autocomplete.min.css" />
+
+      <link href="/public/stylesheets/accessible-autocomplete.min.css" media="screen" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+
+     selectEl = document.querySelector('#passport-country')
+      accessibleAutocomplete.enhanceSelectElement({
+        autoselect: true,
+        defaultValue: selectEl.options[selectEl.options.selectedIndex].innerHTML,
+        minLength: 2,
+        selectElement: selectEl
+      })
+
+     var queryStringParameters = window.location.search
+      var previouslySubmitted = queryStringParameters.length > 0
+      if (previouslySubmitted) {
+        var submittedEl = document.querySelector('.submitted')
+        submittedEl.classList.remove('submitted--hidden')
+        var params = new URLSearchParams(document.location.search.split('?')[1])
+        document.querySelector('.submitted__last-location').innerHTML = params.get('last-location')
+        document.querySelector('.submitted__passport-location').innerHTML = params.get('passport-location')
+      }
+    </script>
