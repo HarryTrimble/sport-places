@@ -32,15 +32,15 @@ $toolkit-font-stack: $helvetica-regular;
 @import 'patterns/check-your-answers';
 
 .button {
-  background-color: #0B0C0C;
+  background-color: blue;
 }
 
 .button:hover {
-  background-color: #0B0C0C;
+  background-color: blue;
 }
 
 .button-start {
-  background-color: #0B0C0C;
+  background-color: blue;
 }
 
 // qr code
@@ -320,7 +320,7 @@ $qrcolor: #fff;
   top: 0;
   left: 0;
   margin: 2em;
-  box-shadow: 0 0 0 1em #28a197, 0 0 0 2em $qrcolor, 18em 0 0 $qrcolor, 18em 0 0 1em #28a197, 18em 0 0 2em $qrcolor, 0 18em 0 $qrcolor, 0 18em 0 1em #28a197, 0 18em 0 2em $qrcolor;
+  box-shadow: 0 0 0 1em #6F777B, 0 0 0 2em $qrcolor, 18em 0 0 $qrcolor, 18em 0 0 1em #6F777B, 18em 0 0 2em $qrcolor, 0 18em 0 $qrcolor, 0 18em 0 1em #6F777B, 0 18em 0 2em $qrcolor;
 }
 
 .follow-me {

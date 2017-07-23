@@ -1,26 +1,79 @@
 {% extends "layout_unbranded.html" %}
 
 {% block page_title %}
-  Sport services
+  Example without branding
 {% endblock %}
 
 {% block content %}
 
+{% include "includes/header_sports_places.html" %}
+
 <main id="content" role="main">
+
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <h1 class="heading-xlarge">
-        Sport services
+      <h1 class="heading-large">
+        The one place to find and book places to do sport:
       </h1>
 
-		<p><a href="/book">Book somewhere to do sport</a></p>
-		<p><a href="/register">Register somewhere for the public to do sport</a></p>
+      <br>
+
+      <ul class="list list-bullet">
+        <li>find local places to do sport</li>
+        <li>book a time and place to do sport</li>
+        <li>change a existing booking</li>
+      </uL>
+
+      <br>
+
+      <form method="get" action="/book/which-sport" class="form">
+
+        <div class="form-group">
+          <input type="submit" class="button button-start" value="Book now" />
+        </div>
+
+      </form>
+
+      <p> or <a href="/manage">change a existing booking</a></p>
 
     </div>
+
   </div>
+
+      <hr>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h3 class="heading-medium">
+        Register a place
+      </h3>
+
+      <p>Use this service to:</p>
+
+      <ul class="list list-bullet">
+        <li>register places for people to do sport</li>
+        <li>take bookings and payments</li>
+        <li>manages bookings and spaces</li>
+      </uL>
+
+      <br>
+
+      <form method="get" action="/register/place-name" class="form">
+
+        <div class="form-group">
+          <input type="submit" class="button button-start" value="Register a place" />
+        </div>
+
+      </form>
+
+      <p> or <a href="/manage">sign in</a> if you’ve used it before</p>
+
+    </div>
+
+  </div>
+
 </main>
 
 {% endblock %}
-
-
