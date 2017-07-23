@@ -13,31 +13,34 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <a class="link-back" href="/register/add-spaces">Back</a>
+      <a class="link-back" href="/register/phone-number">Back</a>
 
-      <form method="get" action="/register/add-spaces" class="form">
+      <form method="get" action="/register/bank-details" class="form">
 
         <h1 class="heading-large">
-          What do you call this space?
+          Security code
         </h1>
 
         <fieldset>
+
           <legend class="visuallyhidden">
-            What do you call this space?
+            Text security code
           </legend>
+          
+          <p>A text with a security code has been sent to XXXXXXX6534</p>
 
-          <!-- National Insurance number -->
+          <!-- Number of people doing sport -->
           <div class="form-group">
-            <input type="text" class="form-control form-control-1-2" id="location" name="space-name" placeholder="Sports Hall">
+            <input type="text" class="form-control form-control-1-8" id="number-of-people" name="number-of-people">
           </div>
-
-          <input type="hidden" name="defined-name" value="Yes">
 
         </fieldset>
 
         <div class="form-group">
-          <input type="submit" class="button" value="Save" />
+          <input type="submit" class="button" value="Continue" />
         </div>
+
+        <p><a href="#">I haven't recieved a text</a></p>
 
       </form>
 

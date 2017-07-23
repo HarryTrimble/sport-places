@@ -1,0 +1,45 @@
+{% extends "layout_unbranded.html" %}
+
+{% block page_title %}
+  Confirmation page example
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/header_sports_places.html" %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="govuk-box-highlight" style="background: #DEE0E2; color: #0B0C0C;">
+        <h1 class="bold-large">
+          Flaxman's Sports Centre<br>
+          registered
+        </h1>
+
+        <br>
+
+        <p>
+          Your place is now on sportplaces.uk for people to book
+        </p>
+        <p>
+          Your registration number is <br>
+          <strong class="heading-medium" style="color: blue;">35734553</strong>
+        </p>
+      </div>
+      <p>A confirmation email has been sent to you.</p>
+
+      <h2 class="heading-medium">What happens next</h2>
+      <p>Your place is now on sportplaces.uk for people to book.</p>
+      <p><a class="button" 
+      href="#">Manage bookings and payments</a></p>
+
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

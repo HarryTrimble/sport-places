@@ -1,7 +1,7 @@
 {% extends "layout_unbranded.html" %} 
 
 {% block page_title %} 
-  Driving lessons 
+  Email
 {% endblock %} 
 
 {% block content %}
@@ -13,30 +13,33 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <a class="link-back" href="/register/add-spaces">Back</a>
+      <a class="link-back" href="/register/email-send">Back</a>
 
-      <form method="get" action="/register/add-spaces" class="form">
+      <form method="get" action="/register/text-code" class="form">
 
         <h1 class="heading-large">
-          What do you call this space?
+          What your phone number?
         </h1>
 
         <fieldset>
           <legend class="visuallyhidden">
-            What do you call this space?
+            What your phone number?
           </legend>
+
+          <p>A security code will be texted to your phone each time you login.</p>
 
           <!-- National Insurance number -->
           <div class="form-group">
-            <input type="text" class="form-control form-control-1-2" id="location" name="space-name" placeholder="Sports Hall">
+            <label class="form-label-bold" for="ni-number">
+            </label>
+            <input type="text" class="form-control form-control-1-2" id="location" name="place-location">
           </div>
 
-          <input type="hidden" name="defined-name" value="Yes">
 
         </fieldset>
 
         <div class="form-group">
-          <input type="submit" class="button" value="Save" />
+          <input type="submit" class="button" value="Send" />
         </div>
 
       </form>
