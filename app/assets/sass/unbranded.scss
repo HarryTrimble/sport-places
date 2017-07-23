@@ -29,6 +29,11 @@ $toolkit-font-stack: $helvetica-regular;
   }
 }
 
+#total {
+    font-size: 48px;
+    font-weight: 700;
+}
+
 @import 'patterns/check-your-answers';
 
 .button {

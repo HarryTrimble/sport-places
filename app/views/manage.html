@@ -1,0 +1,77 @@
+{% extends "layout_unbranded.html" %}
+
+{% block page_title %}
+  sportplaces.uk
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/header_admin.html" %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h3 class="heading-large">
+        Flaxman's Sports Centre<br>
+        <span style="font-size: 19px; font-weight: 400;">Carew St, Camberwell, London SE5 9DF</span>
+      </h3>
+
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-one-quarter">
+      <hr>
+      <p><a class="lede" href="#">Bookings</a></p>
+      <p><a class="lede" href="#">Payments</a></p>
+      <p><a class="lede" href="#">Spaces</a></p>
+      <p><a class="lede" href="#">Settings</a></p>
+    </div>
+
+    <div class="column-two-thirds">
+      <hr>
+      <!-- National Insurance number -->
+      <div class="form-group">
+        <label class="form-label-bold" for="ni-number">
+        </label>
+        <input style="width: 100%;" placeholder="Search bookings, names, spac" type="text" class="form-control" style="" id="location" name="place-name">
+      </div>
+
+
+   
+      <div class="column-one-half" style="background: #BFC1C3;">
+        <br>
+        <p style="font-weight: 700;">Bookings this month</p>
+      </div>
+
+      <div class="column-one-half" style="background: #0B0C0C; color: #fff;">
+        <br>
+        <p style="font-weight: 700;">Payment this month</p>
+      </div>
+      
+      <div class="column-one-half">
+        <p>
+          <span id="total" style="font-weight: 700;">213</span><br>
+          <br>
+          Badminton, 19.00 Thursday
+        </p>
+      </div>
+
+      <div class="column-one-half">
+        <p>
+        <span id="total" style="font-weight: 700;">£6,390.00</span>
+        <br>
+          <br>
+          £20.00
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}
