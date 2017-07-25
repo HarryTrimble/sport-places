@@ -8,13 +8,46 @@
 
 {% include "includes/header_sports_places.html" %}
 
+<style type="text/css">
+  
+  body {
+    background-color: blue !important;
+    color: white !important;
+  }
+
+
+.button {
+  background-color: white !important;
+  color: blue !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  padding-top: 5px !important;
+
+}
+
+.button:hover {
+  background-color: white !important;
+  color: blue !important;
+}
+
+a {
+  color: white !important;
+}
+
+h1 {
+  font-weight: 400 !important;
+}
+
+
+</style>
+
 <main id="content" role="main">
 
   <div class="grid-row">
     <div class="column-two-thirds">
 
       <h1 class="heading-large">
-        The one place to find and book places to do sport:
+        Find and book local places to do sport
       </h1>
 
       <br>
@@ -30,7 +63,7 @@
       <form method="get" action="/book/which-sport" class="form">
 
         <div class="form-group">
-          <input type="submit" class="button button-start" value="Book now" />
+          <input type="submit" class="button" value="Book now" />
         </div>
 
       </form>
@@ -63,7 +96,7 @@
       <form method="get" action="/register/place-name" class="form">
 
         <div class="form-group">
-          <input type="submit" class="button button-start" value="Register a place" />
+          <input type="submit" class="button" value="Register a place" />
         </div>
 
       </form>

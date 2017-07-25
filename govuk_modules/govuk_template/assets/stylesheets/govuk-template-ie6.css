@@ -319,7 +319,7 @@ button:focus {
     text-rendering: optimizeLegibility;
     border-bottom: 1px solid transparent;
     background-size: 36px 32px;
-    background-position: 0 0; }
+    background-position: 0 0;}
     #global-header #logo img {
       margin: 2px 1px 0 0;
       vertical-align: bottom;
