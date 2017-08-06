@@ -29,6 +29,12 @@ $toolkit-font-stack: $helvetica-regular;
   }
 }
 
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
 #total {
     font-size: 48px;
     font-weight: 700;
